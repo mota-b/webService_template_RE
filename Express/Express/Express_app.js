@@ -16,7 +16,7 @@ require('./Express/Mongo')();
  * Express SetUp
  */ 
 var app = express();
-
+app.use(express.static(path.join(__dirname, '../View/public')));
 app.set('views', path.join(__dirname, '../View/views'));
 app.set('view engine', 'ejs');
 

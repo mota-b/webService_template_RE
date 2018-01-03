@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build:prod_test",
+    "start": "npm run build",
     "open": "webpack-dev-server --open",
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
     "build:prod_test": "webpack-dev-server --open",

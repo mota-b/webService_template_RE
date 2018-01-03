@@ -3,10 +3,7 @@ var router = express.Router();
 
 // Get index
 router.get('/', function(req, res){
-    res.render("user", {
-        user: "user Page",
-        route: "user"
-    })
+    res.json("no db yet");
 });
 
 module.exports = router;

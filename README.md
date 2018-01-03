@@ -1,3 +1,3 @@
-#Tempalte Webservice {Backend}
+#Tempalte Webservice {Backend/Frontend}
     - Express
     - React

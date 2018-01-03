@@ -1,30 +1,22 @@
 #!/usr/bin/env node
 
-
-
-
-
-
 /**
  * First Set the Express App 
  */ 
-var app = require('./Controller/Express_app.js');
-
-
+var app = require('../Express_app.js');
 
 /**
  * When the App is ready
  * Start the Server 
  */ 
  
-
 /* Requirements */
 var http = require('http');
-var debug = require('debug')(require('./package.json').name + ':server');
+var debug = require('debug')(require('../package.json').name + ':server');
 normalizePort = require('normalize-port');
 
-/* Get the port from env or default 3000 */
-var port = normalizePort(require('./package.json').links.local_host);
+/* Get the port from env or from package.json */
+var port = normalizePort(require('../package.json').links.local_host);
 app.set('port', port);
 
 

@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 module.exports = function(){
     mongoose.Promise = global.Promise;
-    var db_url = require('../../package.json').links.local_db;
+    var db_url = require('../package.json').links.local_db;
     
     mongoose
     .connect(db_url, { useMongoClient: true })

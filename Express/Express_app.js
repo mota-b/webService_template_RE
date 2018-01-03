@@ -10,15 +10,13 @@ var bodyParser = require('body-parser');
 /**
  * Mongoose Data Base
  */
-require('./Express/Mongo')();
+require('./plugins/Mongo')();
 
 /**
  * Express SetUp
  */ 
 var app = express();
-app.use(express.static(path.join(__dirname, '../View/public')));
-app.set('views', path.join(__dirname, '../View/views'));
-app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, './public')));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -33,16 +31,16 @@ app.use(require('express-session')({
 /**
  * Passport
  */
-require('./Express/Passport')(app);
+require('./plugins/Passport')(app);
 
 /**
  * Routers init
  */
-require('./Express/Routers')(app); 
+require('./plugins/Router')(app); 
 
 /**
  * Error handeling
  */
-require('./Express/ErrHundler')(app);
+require('./plugins/ErrHundler')(app);
 
 module.exports = app;

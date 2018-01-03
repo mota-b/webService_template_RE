@@ -14,6 +14,7 @@ module.exports = function(app){
     
         // render the error page
         res.status(err.status || 500);
-        res.render('error', { user : ''});
+        //res.render('error', { user : ''});
+        console.log("Error");
     });
 }

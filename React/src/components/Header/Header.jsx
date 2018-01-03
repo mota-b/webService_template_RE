@@ -9,7 +9,7 @@ export class Header extends Component{
                 
                 <nav className="navbar navbar-inverse">
                     <div className="container-fluid">
-                        <div class="navbar-header">
+                        <div className="navbar-header">
                             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                 <span className="sr-only">Toggle navigation</span>
                                 <span className="icon-bar"></span>
@@ -31,11 +31,11 @@ export class Header extends Component{
                             <ul className="nav navbar-nav navbar-inverse navbar-right">
                                 <li><a href="#/user">Guest</a></li>
                                 <li className="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Params<span class="caret"></span></a>
+                                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Params<span className="caret"></span></a>
                                     <ul className="dropdown-menu">
                                         <li><a href="#/register"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
                                         <li><a href="#/log"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
-                                        <li role="separator" class="divider"></li>
+                                        <li role="separator" className="divider"></li>
                                         <li><a href="#/">Privacy Policy</a></li>
                                     </ul>
                                 </li>
